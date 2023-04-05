@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align & float</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .elem {
+        background: #eee;
+        border: 1px solid #555;
+        padding: 20px;
+        text-align: left;
+      }
+      .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+      .elem-1 {
+        float: left;
+      }
+      .elem-2 {
+        float: right;
+      }
+      .elem-3 {
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem">header</div>
+      <div class="elem elem-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro ex
+        quod vitae. Sapiente iure, sint eos perferendis dicta facilis?
+      </div>
+      <div class="elem elem-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+        consectetur!
+      </div>
+    </div>
+    <div class="elem elem-3">footer</div>
+  </body>
+</html>
