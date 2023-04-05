@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display, visibility, z-index, overflow</title>
+    <style>
+      .container {
+        background: #eee;
+        height: 500px;
+        width: 500px;
+        /* visibility: hidden; */
+        /* display: none; */
+        position: relative;
+        overflow: auto;
+      }
+      .elem {
+        width: 200px;
+        height: 200px;
+      }
+      .elem-1 {
+        top: 100px;
+        left: 100px;
+        height: 900px;
+        position: absolute;
+        background: teal;
+        z-index: 3;
+      }
+      .elem-2 {
+        bottom: 100px;
+        right: 100px;
+        position: absolute;
+        background: green;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem elem-1"></div>
+      <div class="elem elem-2"></div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis rerum
+      amet eius deserunt non corporis alias repellat sapiente exercitationem
+      tempora.
+    </p>
+  </body>
+</html>
