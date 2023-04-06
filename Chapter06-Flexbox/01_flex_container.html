@@ -14,23 +14,38 @@
         background-color: #333;
         height: 100vh;
         display: flex;
-        flex-flow: column;
-        /* justify-content: center; */
-        align-items: stretch;
+        flex-flow: row nowrap;
+        align-items: flex-start;
       }
 
       .item {
         background: red;
         height: 200px;
+        flex-basis: 200px;
         margin: 1rem;
+      }
+
+      .item-1 {
+        flex: auto;
+        align-self: flex-end;
+        order: 2;
+      }
+
+      .item-2 {
+        flex-basis: 200px;
+        order: 1;
+      }
+
+      .item-3 {
+        flex: 1 1 auto;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
     </div>
   </body>
 </html>
