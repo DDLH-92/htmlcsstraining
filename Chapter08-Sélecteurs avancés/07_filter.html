@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      body img {
+        width: 300px;
+        /* filter: blur(2px); */
+        /* filter: brightness(100%); */
+        /* filter: contrast(50%); */
+        /* filter: drop-shadow(5px 5px 2px red); */
+        filter: grayscale(100%);
+        opacity: 0.9;
+      }
+
+      body img:hover {
+        filter: grayscale(0%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/img/phototest1.jpg" />
+  </body>
+</html>
