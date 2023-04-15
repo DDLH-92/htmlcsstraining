@@ -1,5 +1,9 @@
+@use 'variables' as v;
+@use 'cards';
+
 body {
-  background-color: blue;
+  font-family: v.$font-family;
+  background-color: v.$primary;
   height: 100vh;
   margin: 0;
 }

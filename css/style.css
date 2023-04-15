@@ -1,5 +1,10 @@
+.card {
+  font-size: 34px;
+}
+
 body {
-  background-color: blue;
+  font-family: "Courier New", Courier, monospace;
+  background-color: green;
   height: 100vh;
   margin: 0;
 }
