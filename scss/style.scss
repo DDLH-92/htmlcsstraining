@@ -1,9 +1,29 @@
-@use 'variables' as v;
-@use 'cards';
+@import 'variables';
+@import 'buttons';
 
 body {
-  font-family: v.$font-family;
-  background-color: v.$primary;
+  font-family: $font-family;
+  background-color: $gray;
   height: 100vh;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 2rem;
+  background: white;
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
+    span {
+      color: green;
+    }
+  }
 }
