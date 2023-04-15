@@ -1,58 +1,18 @@
-.btn-default, .btn-danger, .btn-primary, .btn-warning {
-  border: 0;
-  border-radius: 5px;
-  padding: 1rem 2rem;
-  min-width: 100px;
-  background: #333;
-  color: white;
-  font-weight: 700;
-  cursor: pointer;
-}
-.btn-default:hover, .btn-danger:hover, .btn-primary:hover, .btn-warning:hover {
-  opacity: 0.5;
-}
+/* Error: @content is only allowed within mixin declarations.
+ *   ,
+ * 9 |     @content;
+ *   |     ^^^^^^^^
+ *   '
+ *   scss/_media.scss 9:5  @import
+ *   scss/style.scss 4:9   root stylesheet */
 
-.btn-warning {
-  background: orange;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: @content is only allowed within mixin declarations.\a   \2577 \a 9 \2502      @content;\a   \2502      ^^^^^^^^\a   \2575 \a   scss/_media.scss 9:5  @import\a   scss/style.scss 4:9   root stylesheet";
 }
-
-.btn-primary {
-  background: blue;
-}
-
-.btn-danger {
-  background: red;
-}
-
-.btn-default {
-  background: #bbb;
-}
-
-body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #eee;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  width: 500px;
-  height: 300px;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  padding: 2rem;
-  background: white;
-}
-.card h1 {
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
-}
-.card h1 span {
-  color: green;
-}
-
-/*# sourceMappingURL=style.css.map */

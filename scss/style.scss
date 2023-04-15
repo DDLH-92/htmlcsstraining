@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'buttons';
+@import 'mixins';
+@import 'media';
 
 body {
   font-family: $font-family;
@@ -12,6 +14,12 @@ body {
 }
 
 .card {
+  @include xs {
+    background: red;
+  }
+  @include xl {
+    background: orange;
+  }
   width: 500px;
   height: 300px;
   border: 1px solid #ccc;
@@ -24,6 +32,21 @@ body {
     border-bottom: 1px solid $gray;
     span {
       color: green;
+      @include xs {
+        color: red;
+      }
     }
+  }
+  .text {
+    color: #333;
+  }
+  ul {
+    @include inline-list;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    background: red;
   }
 }
