@@ -1,25 +1,24 @@
-@import 'variables';
-@import 'buttons';
-@import 'mixins';
-@import 'media';
+@use 'variables';
+@use 'buttons';
+@use 'mixins';
+@use 'functions';
 
 body {
-  font-family: $font-family;
-  background-color: $gray;
+  margin: 0;
+  font-family: variables.$font-family;
+  background-color: variables.$gray;
   height: 100vh;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card {
-  @include xs {
-    background: red;
-  }
-  @include xl {
-    background: orange;
-  }
+  box-sizing: border-box;
+  // @include xs {
+  //   background: red;
+  // }
+  // @include xl {
+  //   background: orange;
+  // }
   width: 500px;
   height: 300px;
   border: 1px solid #ccc;
@@ -29,20 +28,23 @@ body {
   h1 {
     font-size: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $gray;
-    span {
-      color: green;
-      @include xs {
-        color: red;
-      }
-    }
+    border-bottom: 1px solid variables.$gray;
+    // span {
+    //   color: green;
+    //   @include xs {
+    //     color: red;
+    //   }
+    // }
   }
   .text {
     color: #333;
   }
-  ul {
-    @include inline-list;
-  }
+  // ul {
+  //   @include inline-list;
+  // }
+  position: absolute;
+  left: functions.centerAbsolute(500px);
+  top: functions.centerAbsolute(300px);
 }
 
 @media only screen and (max-width: 500px) {
